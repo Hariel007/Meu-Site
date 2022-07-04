@@ -1,0 +1,124 @@
+/***************Geral**********************/
+
+/*Define as propriedades que serão aplicadas em todos os elementos do html*/
+* {
+    margin: 0;
+}
+
+/*Define as propriedades de texto padrão da página, tais como tamanho, cor e família*/
+html {
+    font-family: Arial, Verdana, sans-serif; 
+    font-size: 16px;
+    color: #000;
+}
+body {
+    
+    background-color: rgb(141, 135, 135);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    
+}
+
+/***************Cabeçalho**********************/
+
+/*Define o cabeçalho como fluído, usando sempre 100% da largura 
+disponível no viewpoert/displau/navegador, ou seja, adapta-se a resolução da tela*/
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(68, 66, 70);
+} 
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+
+
+.area-header {
+    /*Define uma largura miníma para essa área*/
+    min-width: 960px;
+    /*Define uma largura máxima para essa área*/
+    max-width: 1024px;
+    height: 100%;
+    /* sempre utilizar margin: 0 auto;  para centralizar elementos horizoltalmente */
+    margin:0 ;
+    display:inline-flex;
+    text-align: center;
+    color: #ffffff;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background:  #E0E0F8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border:  0;
+    margin-bottom: 1em;
+    color: #e0e0e0;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+h2 {
+    color: rgb(253, 253, 253);
+    font-family: 'arial';
+    font-size: 24px;
+    font-style: italic;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+h3 {
+    font-family: 'vogue';
+    text-decoration: underline;
+}
+
+

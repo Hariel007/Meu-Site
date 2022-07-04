@@ -185,7 +185,8 @@ nav ul li a {
                 3px 3px rgb(30, 226, 4);
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
-    opacity:7 ;
+     opacity:7 ;
+     border-radius: 10px;
 
 }
 
@@ -260,4 +261,5 @@ h3{
 .copy{
      padding-top: 5px;
      font-size: small;
+     padding-bottom: 5px;
 }
