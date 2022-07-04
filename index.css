@@ -1,0 +1,263 @@
+/******Geral*******/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+     font-family: Arial, Verdana, sans-serif; 
+     font-size: 16px;
+     color: #000;
+}
+
+body {
+     background-color: rgb(12, 2, 2);
+}
+
+header {
+     width: 100%;
+     height: 60px;
+     background-color:rgb(128, 0, 179);
+     border: 1px solid rgb(128, 0, 179);
+     
+     
+}
+
+.area-header,
+main{
+     /*Define uma largura miníma para essa área*/
+     min-width: 960px;
+     /*Define uma largura máxima para essa área*/
+     max-width: 1024px;
+     height: 100%;
+     /* sempre utilizar margin: 0 auto;  para centralizar elementos horizoltalmente */
+     margin: 0 auto;
+
+}
+
+nav {
+     /*Define que o elemento tem tendência à ficar à direita*/
+     float: right;
+     height: 100%;
+     width: 100%;
+
+}
+
+nav ul {
+     padding: 0;
+     /*display table será usado para formatar a lista não ordenada*/
+     display:  table;
+     height: 100%;
+     
+     
+}
+
+nav ul li {
+     /*Remove os marcadores e posiciona os itens um ao lado do outro*/
+     display:table-cell;
+     width: 150px;
+     text-align: center;
+     /*Posicionamento vertical do conteúdo no item*/
+     vertical-align: middle;
+     border: 5px solid transparent;
+     transition: border-top 1s;
+     
+}
+
+nav ul li:hover{
+     border-top: 5px solid rgb(30, 226, 4);
+}
+
+nav ul li a {
+     color: #EEE;
+     font-weight: bold; 
+     /*Remove o sublinado tosco - underline, overline, line, line-through*/
+     text-decoration: none;
+     /*Define como maiúsculo o tamaho da fonte*/
+     text-transform: uppercase;
+}
+
+/******Destaque*******/
+
+/*Define as propriedades da section "destaque" */
+#destaque{
+  
+     height: 300px;
+     background-color: black;
+     color: aliceblue;
+     border: 2px solid rgb(128, 0 , 179);
+     border-radius:10px;
+     font-size: 20px;
+     font-style: normal;
+     text-align: center;
+     padding: -50px;
+     margin-top: 20px;
+
+
+     
+
+}
+
+
+
+/*Define as propriedades do elemento figure*/
+#destaque figure{
+     width: 50%; 
+     float: left; 
+     /*Define o espaçamento acima do elemento*/
+     margin-top: 20px;
+     border-radius: 10px;
+     
+}
+
+/*Define as propriedades do elemento div dentro do elemento com id "destaque"*/
+#destaque div{
+     width: 48%; 
+     float: right;
+     /*Define o espaçamento acima do elemento*/
+     margin-top: 25px;
+}
+
+/*Define as propriedades para o titulo da seção destaque*/
+#destaque div h3{
+     color: whitesmoke;
+     margin: 24px 1px 5px 10px;
+     background-color: rgb(128, 0, 179);
+     border-radius: 10px;
+     text-align: center;
+     
+     
+     
+}
+
+/*Define as propriedades para o titulo da seção destaque*/
+#destaque div p {
+     color: white;
+     font-size: 14px;
+     line-height: 25px; 
+     text-align: left;
+     margin-left: 10px;
+     font-weight: bold;
+     
+}
+
+
+
+/*Selecionar o elemento com classe "foto"*/
+.foto {
+     width:auto;
+     /*Permite que haja outros elementos ao lado deste, se houver espaço*/
+     display: inline-block;
+     /*Define margem da Direita do elemento, após a borda*/
+     margin-right: 8px;
+     /*O que violar as bordas do elemento, sair para fora, será omitido, ou seja, não será mostrado*/
+     overflow: hidden;
+     height: auto;
+
+
+}
+
+/*Selecionar os elementos com IMG que estejam dentro de um elemento com a classe "foto"*/
+
+
+.foto p {
+     color: rgb(250, 250, 250);
+     
+}
+
+
+.foto img  {
+     width: 100%;
+     height: auto;
+     /*Transforma o objeto, alterando a escala dele*/
+     transition: transform 0.2s;
+     opacity: 0.9;
+     border: none;
+     border-radius: 15px;
+     margin-left: 10px;
+}
+
+.foto img:hover {
+     
+    box-shadow:
+                5px 5px rgb(30, 226, 4),
+                2px 2px rgb(30, 226, 4),
+                3px 3px rgb(30, 226, 4);
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    opacity:7 ;
+
+}
+
+h2 {
+     color: white;
+     width: 350px;
+     height: 20px;
+     /* sempre utilizar margin: 0 auto;  para centralizar elementos horizoltalmente */
+     margin: 0 auto;
+     padding: 20px;
+     font-size: 30px;
+     font-family:Arial, Helvetica, sans-serif
+     
+     
+     
+}
+h3{
+
+    font-style: normal;
+    font-style:unset;
+    padding:20px;
+
+}
+
+
+#youtube{
+     font-size: 35px;
+     color: red;
+     
+}
+
+#whats{
+     font-size: 50px;
+     color: rgb(5, 192, 52);
+   
+     border-radius: 14px;
+}
+
+#insta{
+      font-size: 35px;
+      color: rgb(115, 9, 214);
+}
+
+#face{
+     font-size: 35px;
+     color: rgb(37, 63, 211);
+     
+}
+
+
+
+
+#rodape {
+     
+     background-color: black;
+     /*Define a altura do elemento*/
+     height: 110px;
+     /*Define o alinhamento do texto*/
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     border:1px solid rgb(156, 7, 214);
+     border-radius: 10px;
+     
+}
+
+#rodape p {
+     color: rgb(247, 247, 247);
+     padding-top: 10px;
+     
+}
+
+.copy{
+     padding-top: 5px;
+     font-size: small;
+}
